@@ -56,36 +56,69 @@
 // 	return 0;
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std ;
+
+// class Student{
+// public: 
+// 	string name;
+// 	int roll;
+// 	int serial;
+// 	int id;
+
+
+// 	Student(string name, int roll, int serial, int id){
+// 		this->name=name;
+// 		this->roll=roll;
+// 		this->serial= serial;
+// 		this->id=id;
+// 	}
+
+// };
+
+// Student Calling_function(){
+// 	Student student1("Hossain Ahmmed Taufiq", 1, 1, 2232);
+// 	return student1;
+// }
+
+// int main(){
+
+// 	Student Student1= Calling_function();
+// 	cout<<Student1.name<<endl<<Student1.roll<<" "<<Student1.serial<<" "<<Student1.id<<endl;
+
+// 	return 0;
+
+// }
+
 #include<bits/stdc++.h>
-using namespace std ;
+using namespace std ; 
 
 class Student{
-public: 
-	string name;
-	int roll;
-	int serial;
-	int id;
+public:
+	string name; 
+	int roll ; 
+	int serial ; 
+	int id ; 
 
+	Student (string name, int roll, int serial , int id ){
+		this->name=name; 
+		this->roll=roll ; 
+		this-> serial=serial; 
+		this-> id =id; 
 
-	Student(string name, int roll, int serial, int id){
-		this->name=name;
-		this->roll=roll;
-		this->serial= serial;
-		this->id=id;
 	}
-
 };
 
-Student Calling_function(){
-	Student student1("Hossain Ahmmed Taufiq", 1, 1, 2232);
-	return student1;
-}
+// Student Calling_function(){
+// 	Student Student1("Hossain Ahmmed Taufiq", 1, 1, 2);
+// 	return Student1; 
+// }
 
 int main(){
 
-	Student Student1= Calling_function();
-	cout<<Student1.name<<endl<<Student1.roll<<" "<<Student1.serial<<" "<<Student1.id<<endl;
-
-	return 0;
+	// Student Student1= Calling_function();
+	Student Student1("Hossain Ahmmed", 1, 1, 2 );
+	cout<<Student1.name<<endl; 
+	cout<<Student1.roll<<" "<<Student1.serial<<" "<<Student1.id<<endl; 
 
 }

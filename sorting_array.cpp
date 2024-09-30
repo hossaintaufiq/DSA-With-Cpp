@@ -60,41 +60,70 @@
 
 
 
-#include<bits/stdc++.h>
-using namespace std; 
+// #include<bits/stdc++.h>
+// using namespace std; 
 
-int main(){
-	string s;
+// int main(){
+// 	char s[10e5+1];
 	
 
-	while(getline(cin,s)){
+// 	while(cin>>s){
 
-		int a[s.length()];
-		int l= s.length();
+		
+// 		int l= (int)s.size();
+// 		int a[l];
 
-		for(int i=0;i<s.length();i++){
-			int x= (int)s[i];
-			a[i]=x;
-			// cout<<s[i]<<" ";
-		}
+// 		for(int i=0;i<l;i++){
+// 			int x= (int)s[i];
+// 			a[i]=x;
+// 			// cout<<s[i]<<" ";
+// 		}
 
-		sort(a,a+l);
+// 		sort(a,a+l);
 
-		for(int i=0;i<s.length(); i++){
+// 		for(int i=0;i<l; i++){
 
 
-			char ch= (char)a[i];
-			if(ch==' '){
-				continue;
-			}
-			else{
-				cout<<ch;
-			}
+// 			char ch= (char)a[i];
+// 			if(ch==' '){
+// 				continue;
+// 			}
+// 			else{
+// 				cout<<ch;
+// 			}
 			
 
-			}
+// 			}
 
-		// cout<<s<<endl;
-			cout<<endl;
-	}
-}
+// 		// cout<<s<<endl;
+// 			cout<<endl;
+// 	}
+// }
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    char s[100001]; 
+    char a[100001]; 
+
+    
+    while (cin.getline(s, 100001)) {
+        int l = strlen(s);
+        int idx = 0;
+        for (int i = 0; i < l; i++) {
+            if (s[i] != ' ') {
+                a[idx++] = s[i];
+            }
+        }
+       
+        sort(a, a + idx);
+        for (int i = 0; i < idx; i++) {
+            cout << a[i];
+        }
+        cout << endl;
+    }
+
+    return 0;
+} 
