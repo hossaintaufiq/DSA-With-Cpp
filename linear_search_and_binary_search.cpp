@@ -25,6 +25,11 @@ using namespace std;
 	
 }
 
+void binarySearch(int*a,int n, int val){
+
+	
+}
+
 int main(){
 	cout<<"<<<--------------Linear search---------------->>> "<<endl<<endl;
 	int n; 
